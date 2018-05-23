@@ -1,0 +1,32 @@
+/* Aqui hacemos el estilo del encabezado con un fondo gris y algo de relleno*/
+.bmenu {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  border: 1px solid black;
+}
+/* Aqui mostamos el estilo de los enlaces */
+.bmenu a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+/* Aqui diseñamos el vinculo del logotipo*/
+.bmenu a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+/* Aqui hacemos el estilo del enlace activo */
+.header a.active {
+  background-color: blue;
+  color: white;
+}
+/* Aqui movemos los otros botones a la derecha*/
+.btnderecha {
+  float:right;
+}
