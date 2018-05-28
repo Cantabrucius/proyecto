@@ -1,7 +1,7 @@
 /* Aqui hacemos el estilo del encabezado con un fondo gris y algo de relleno*/
 .bmenu {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #13C6EF;
   padding: 20px 10px;
   border: 1px solid black;
 }
@@ -29,4 +29,14 @@
 /* Aqui movemos los otros botones a la derecha*/
 .btnderecha {
   float:right;
+}
+/* Aqui hacemos el estilo del pie de pagina */
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#13C6EF;
+   color: black;
+   text-align: center;
 }
