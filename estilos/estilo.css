@@ -30,17 +30,6 @@
 .btnderecha {
   float:right;
 }
-<<<<<<< HEAD
-/* Aqui hacemos el estilo del pie de pagina */
-footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color:#13C6EF;
-   color: black;
-   text-align: center;
-=======
 
 .infoUser {
   border: 1px solid black;
@@ -69,5 +58,4 @@ footer {
   float: left;
   margin-left: 15px;
 
->>>>>>> 606ec1571bb1b068c57a3caa40ca876d94da87ba
 }
