@@ -1,9 +1,9 @@
 /* Aqui hacemos el estilo del encabezado con un fondo gris y algo de relleno*/
 .bmenu {
   overflow: hidden;
+  width: 100%;
   background-color: #13C6EF;
   padding: 20px 10px;
-  border: 1px solid black;
 }
 /* Aqui mostamos el estilo de los enlaces */
 .bmenu a {
@@ -31,16 +31,6 @@
   float:right;
 }
 
-/* Aqui hacemos el estilo del pie de pagina */
-footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color:#13C6EF;
-   color: black;
-   text-align: center;
-
 .infoUser {
   border: 1px solid black;
   width: 20%;
@@ -67,5 +57,25 @@ footer {
   height: 55%;
   float: left;
   margin-left: 15px;
+}
+
+/* Aqui hacemos el estilo del pie de pagina */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #13C6EF;
+  color: black;
+  text-align: center;
+}
+
+#derechos{
+  float:right;
 
 }
+
+#gmail{
+  float: left;
+}
+
