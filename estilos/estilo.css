@@ -2,7 +2,7 @@
 .bmenu {
   overflow: hidden;
   width: 100%;
-  background-color: #13C6EF;
+  background-color: white;
   padding: 20px 10px;
 }
 /* Aqui mostamos el estilo de los enlaces */
@@ -15,6 +15,10 @@
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: darkorchid;
+  font-family: "Gill Sans MT";
 }
 /* Aqui diseñamos el vinculo del logotipo*/
 .bmenu a.logo {
@@ -71,11 +75,12 @@ footer {
 }
 
 #derechos{
-  float:right;
-
+  float:left;
+  margin-left: 10px;
 }
 
 #gmail{
-  float: left;
+  float: right;
+  margin-right: 10px;
 }
 
