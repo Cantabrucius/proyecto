@@ -1,9 +1,9 @@
 /* Aqui hacemos el estilo del encabezado con un fondo gris y algo de relleno*/
 .bmenu {
   overflow: hidden;
-  background-color: #13C6EF;
+  background-color: white;
   padding: 20px 10px;
-  border: 1px solid black;
+    font-family: "Gill Sans MT";
 }
 /* Aqui mostamos el estilo de los enlaces */
 .bmenu a {
@@ -15,6 +15,8 @@
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+    color: darkorchid;
+    margin:10px;
 }
 /* Aqui diseñamos el vinculo del logotipo*/
 .bmenu a.logo {
