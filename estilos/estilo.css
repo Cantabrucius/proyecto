@@ -33,6 +33,34 @@
   float:right;
 }
 
+.infoUser {
+    border: 1px solid black;
+    width: 20%;
+    height: 24%;
+    margin-top: 15px;
+    margin-right: 3%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    float:left;
+}
+
+.eventos {
+    border: 1px solid black;
+    width: 74%;
+    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.eventosCercanos {
+    border: 1px solid black;
+    width: 20%;
+    height: 55%;
+    float: left;
+    margin-left: 15px;
+}
+
 /* Aqui hacemos el estilo del pie de pagina */
 footer {
    position: fixed;
@@ -43,31 +71,4 @@ footer {
    color: black;
    text-align: center;
 
-.infoUser {
-  border: 1px solid black;
-  width: 20%;
-  height: 24%;
-  margin-top: 15px;
-  margin-right: 3%;
-  margin-left: 15px;
-  margin-bottom: 15px;
-  float:left;
-}
 
-.eventos {
-  border: 1px solid black;
-  width: 74%;
-  height: 83%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  float: right;
-}
-
-.eventosCercanos {
-  border: 1px solid black;
-  width: 20%;
-  height: 55%;
-  float: left;
-  margin-left: 15px;
-
-}
