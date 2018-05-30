@@ -40,7 +40,7 @@ footer {
    background-color:#13C6EF;
    color: black;
    text-align: center;
-
+}
 .infoUser {
   border: 1px solid black;
   width: 20%;
@@ -68,4 +68,36 @@ footer {
   float: left;
   margin-left: 15px;
 
+}
+
+/*Aqui ponemos el estilo de la barra lateral izquierdo de la pagina de cuenta.html*/
+.btncuenta {
+    height: 30%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 150;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 100px;
+}
+.btncuenta a {
+    padding: 8px 9px 6px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+.btncuenta a:hover {
+    color: #f1f1f1;
+}
+/*Aqui ponemos el estilo del contenido de la pagina de cuenta*/
+.contenido_cuenta{
+  border: 1px solid black;
+  width: 88%;
+  height: 83%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: right;
 }
