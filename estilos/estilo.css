@@ -84,5 +84,45 @@ footer {
    background-color:whitesmoke;
    color: black;
    text-align: center;
+   font-family: "Gill Sans MT";
+}
+/* Aqui hacemos el estilo del menu que se encuentra en la parte izquierda de la pagina de cuenta*/
+#micuenta a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: darkorchid;
+    border-radius: 0 5px 5px 0;
+    font-family: "Gill Sans MT";
 
+}
+#micuenta a:hover {
+    left: 0;
+}
+#Info {
+    top: 140px;
+    background-color: #2196F3;
+}
 
+#Editar {
+    top: 200px;
+    background-color: #2196F3;
+}
+
+#Out{
+    top: 260px;
+    background-color: #2196F3;
+}
+/* Aqui hacemos el espacio de los botones que hemos creado anteriormente para la pagina de cuenta*/
+.contenido_cuenta{
+  border: 1px solid black;
+  width: 88%;
+  height: 600px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: right;
+}
