@@ -48,12 +48,25 @@
 .eventos {
     border: 1px solid black;
     width: 74%;
-    height: 80%;
+    height: 70%;
     margin-top: 15px;
     margin-bottom: 15px;
     float: right;
 }
-
+.evento{
+    border: 1px solid black;
+    height: 100px;
+    margin: 8px 4px;
+    padding: 4px 8px;
+}
+  p#localidad, p#fecha, p#precio{
+    float: left;
+      margin: 4px 8px;
+}
+ button#seguir{
+    float:right;
+     margin-right: 20px;
+}
 .eventosCercanos {
     border: 1px solid black;
     width: 20%;
