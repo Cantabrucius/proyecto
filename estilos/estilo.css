@@ -73,42 +73,53 @@ footer {
    font-family: "Gill Sans MT";
 }
 /* Aqui hacemos el estilo del menu que se encuentra en la parte izquierda de la pagina de cuenta*/
-#micuenta a {
-    position: absolute;
-    left: -80px;
-    transition: 0.3s;
-    padding: 15px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
+body {font-family:"Gill Sans MT"}
+.separacion{
+  position:static;
+  width: 100%;
+  height: 200px;
+  padding: 120px 16px;
+}
+.cuenta {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #2196F3;
+    width: 10%;
+    height: 200px;
+	  font-family:"Gill Sans MT";
+}
+
+.cuenta button {
+	  display: block;
+    background-color: inherit;
     color: darkorchid;
-    border-radius: 0 5px 5px 0;
-    font-family: "Gill Sans MT";
-
-}
-#micuenta a:hover {
-    left: 0;
-}
-#Info {
-    top: 140px;
-    background-color: #2196F3;
-}
-
-#Editar {
-    top: 200px;
-    background-color: #2196F3;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family:"Gill Sans MT";
 }
 
-#Out{
-    top: 260px;
-    background-color: #2196F3;
+.cuenta button:hover {
+    background-color: #ddd;
+    font-family:"Gill Sans MT";
 }
-/* Aqui hacemos el espacio de los botones que hemos creado anteriormente para la pagina de cuenta*/
-.contenido_cuenta{
-  border: 1px solid black;
-  width: 88%;
-  height: 600px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  float: right;
+
+.cuenta button.active {
+    background-color: #ccc;
+	font-family:"Gill Sans MT";
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px 120px;
+    border: 1px solid black;
+    width: 60%;
+    border-left: none;
+    height: 300px;
+    font-family:"Gill Sans MT";
 }

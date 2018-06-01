@@ -12,15 +12,43 @@
       <a href="crearEvento.html">Crear Evento</a>
     <a href="cuenta.html">Cuenta</a>
     </div>
-  </div>
-  <div id="micuenta" class="btncuenta">
-  <a href="#" id="Info">Informacion</a>
-  <a href="#" id="Editar">Editar Perfil</a>
-  <a href="#" id="Out">Los Out</a>
-</div>
-<div class="contenido_cuenta">
 
+<div class="separacion">
+    <div class="cuenta">
+    <button class="tablinks" onclick="cuenta(event, 'Informacion')" id="defaultOpen">Informacion</button>
+    <button class="tablinks" onclick="cuenta(event, 'Editar')">Editar Perfil</button>
+    <button class="tablinks" onclick="cuenta(event, 'Outs')">Log Out</button>
+    </div>
+
+    <div id="Informacion" class="tabcontent">
+      <h3>Informacion</h3>
+      <p>Info</p>
+    </div>
+    <div id="Editar" class="tabcontent">
+      <h3>Editar Perfil</h3>
+      <p>Editar.</p>
+    </div>
+    <div id="Outs" class="tabcontent">
+      <h3>Log Out</h3>
+      <p>Outs.</p>
+    </div>
 </div>
+  <script>
+  function cuenta(evt, botones_cuenta) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(botones_cuenta).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  document.getElementById("defaultOpen").click();
+  </script>
   <footer>
     <p id="derechos">Derechos reservados por la compañia. Copyrigth &copy; 2017-2018. </p>
     <p id="gmail">Para contactar con nosotros:
