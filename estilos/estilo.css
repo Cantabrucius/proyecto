@@ -148,11 +148,11 @@ body {font-family:"Gill Sans MT"}
 /* Aqui hacemos el posicionamiento de la pagina de busqueda*/
 
 .bmain {
-
   border: 1px solid black;
   width: 74%;
   height: 70%;
   margin-top: 15px;
   margin-bottom: 15px;
   float: right;
+  text-align: center;
 }
