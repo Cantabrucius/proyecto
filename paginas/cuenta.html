@@ -25,8 +25,26 @@
       <p>Info</p>
     </div>
     <div id="Editar" class="tabcontent">
-      <h3>Editar Perfil</h3>
-      <p>Editar.</p>
+      <form action="../controller/crear.php" method="post"> <input type="hidden" name="id" value="<?php echo $id;?>">
+          <br />
+            Nombre:
+          <br />
+            <input type="text" name="nombre" value="">
+          <br />
+            Apellido:
+          <br />
+            <input type="text" name="apellido" value="">
+          <br />
+            Usuario:
+          <br />
+            <input type="text" name="usuario" value="">
+          <br/>
+            Contraseña:
+          <br />
+            <input type="text" name="contraseña" value="">
+          <br/>
+        </br>
+            <right> <input class="form-btn" name="submit" type="submit" value="Editar Perfil" /></right>
     </div>
     <div id="Outs" class="tabcontent">
       <h3>Log Out</h3>
