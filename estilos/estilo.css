@@ -4,6 +4,7 @@
   background-color: white;
   padding: 20px 10px;
     font-family: "Gill Sans MT";
+    height: 5%;
 }
 /* Aqui mostamos el estilo de los enlaces */
 .bmenu a {
@@ -15,8 +16,8 @@
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
-    color: darkorchid;
-    margin:10px;
+  color: darkorchid;
+  margin:10px 25px ;
 }
 /* Aqui diseñamos el vinculo del logotipo*/
 .bmenu a.logo {
@@ -47,12 +48,25 @@
 .eventos {
     border: 1px solid black;
     width: 74%;
-    height: 300px;
+    height: 70%;
     margin-top: 15px;
     margin-bottom: 15px;
     float: right;
 }
-
+.evento{
+    border: 1px solid black;
+    height: 100px;
+    margin: 8px 4px;
+    padding: 4px 8px;
+}
+  p#localidad, p#fecha, p#precio{
+    float: left;
+      margin: 4px 8px;
+}
+ button#seguir{
+    float:right;
+     margin-right: 20px;
+}
 .eventosCercanos {
     border: 1px solid black;
     width: 20%;
@@ -67,7 +81,7 @@ footer {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color:#13C6EF;
+   background-color:whitesmoke;
    color: black;
    text-align: center;
    font-family: "Gill Sans MT";
@@ -80,9 +94,18 @@ body {font-family:"Gill Sans MT"}
   height: 200px;
   padding: 120px 16px;
 }
+<<<<<<< HEAD
 .cuenta {
     float: left;
     border: 1px solid #ccc;
+=======
+#micuenta a:hover {
+    left: 0;
+}
+
+#Info {
+    top: 140px;
+>>>>>>> ef83550addc4c0c590968b1c7e859113427ffb0b
     background-color: #2196F3;
     width: 10%;
     height: 200px;

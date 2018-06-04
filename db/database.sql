@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-05-2018 a las 09:59:37
+-- Tiempo de generación: 01-06-2018 a las 10:43:19
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -62,6 +62,7 @@ CREATE TABLE `usuarios` (
   `nombre` varchar(30) COLLATE latin1_spanish_ci NOT NULL,
   `apellidos` varchar(50) COLLATE latin1_spanish_ci NOT NULL,
   `nick` varchar(10) COLLATE latin1_spanish_ci NOT NULL,
+  `Password` varbinary(255) NOT NULL,
   `email` varchar(20) COLLATE latin1_spanish_ci NOT NULL,
   `telefono` varchar(9) COLLATE latin1_spanish_ci NOT NULL,
   `localidad` enum('Santander','Torrelavega','Maliaño','Astillero','Comillas','Santoña') COLLATE latin1_spanish_ci NOT NULL,
