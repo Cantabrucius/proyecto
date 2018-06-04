@@ -107,11 +107,11 @@ body {font-family:"Gill Sans MT"}
     background-color: #2196F3;
     width: 10%;
     height: 200px;
-	  font-family:"Gill Sans MT";
+    font-family:"Gill Sans MT";
 }
 
 .cuenta button {
-	  display: block;
+    display: block;
     background-color: inherit;
     color: darkorchid;
     padding: 22px 16px;
