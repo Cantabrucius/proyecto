@@ -158,3 +158,13 @@ body {font-family:"Gill Sans MT"}
   height: 200px;
   padding: 100px 19px;
 }
+.btnBuscar {
+       font-size:16px;
+       font-family:Verdana,Helvetica;
+       font-weight:bold;
+       color:white;
+       background:#638cb5;
+       border:0px;
+       width:160px;
+       height:40px;
+}
