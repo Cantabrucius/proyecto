@@ -1,0 +1,129 @@
+body{
+font-family: "Gill Sans MT";
+color: darkorchid;
+}
+.izquierda{
+  float:left;
+  background-color:lightblue;
+  width:50%;
+  height:38vw;
+  padding-bottom:100px;
+
+}
+.derecha{
+  float: right;
+  background-color:lightgrey;
+  width:50%;
+  height:38vw;
+  padding-bottom:100px;
+
+}
+
+.avatar{
+width:10%;
+}
+/* estilo para el formulario de crear  */
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 0px;
+    margin: 12px 0px;
+}
+/*estilo para la pestaña que se abre al pulsar crear */
+.modal-content {
+    background-color: #f4ecf7 ;
+    margin: 0% auto 0% auto;
+    border: 1px  ;
+    width: 50%;
+}
+
+.cajai{
+    display: none;
+    position: fixed; /* en el sitio*/
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 10px;
+}
+
+.cajad{
+  /* estilo para el formulario de login  */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+}
+
+.move{
+margin-left: 275px;
+}
+
+.log{
+  width: 50%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 1000px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.move2{
+margin-left: 275px;
+}
+
+.cre{
+  width: 50%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+/* estilo para el boton de cerrar */
+
+.close:focus,.close:hover {
+    color: red;
+    cursor: pointer;
+}
+.close {
+    right: 25px;
+    top: 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/*animaciones de la pestaña que se abre cuando pulsas crear */
+.animate {
+    -webkit-animation: animatezoom 1s;
+    animation: animatezoom 1s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+}
