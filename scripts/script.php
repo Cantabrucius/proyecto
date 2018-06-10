@@ -25,7 +25,6 @@ $table_database = "usuarios";
 function register($table_database, $form_data){
 
   $form_data = array();
-  $form_data['username'] = $_POST['nombre'];
   $form_data['nickname'] = $_POST['nick'];
   $form_data['email'] = $_POST['email'];
   $form_data['password'] = $_POST['password'];
@@ -60,7 +59,7 @@ function logIn($table_database, $logIn_data){
 }
 
 function editProfile(){
-  
+
 }
 
 function showProfileInfo(){

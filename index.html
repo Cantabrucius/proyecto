@@ -4,8 +4,8 @@
 	<title>
 		Pagina principal
 	</title>
-	<link rel="stylesheet" type="text/css" href="/estilos/iniciosesion.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos/iniciosesion.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 </head>
 <body>
   <!-- Div para la caja derecha -->
@@ -17,26 +17,26 @@
 	</div>
 	<!--Contenido del boton crear -->
 	<div id="id02" class="cajai">
-    <form class="modal-content animate" action="/action_page.php">
+    <form action="scripts/script.php" class="modal-content animate">
 		 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
 		   <!-- Imagen -->
 
 		 <center><img src="img_perfil.png" alt="Avatar" class="avatar"></center>
 	<div class="container">
 		<center><label for="uname"><b>Username</b></label></center>
-      <center><input type="text" placeholder="Enter Username" name="uname" required></center>
+      <center><input type="text" placeholder="Usuario" name="username" required></center>
 
 <br>
 		<label for="email"><center><b>Email</b></center></label>
 <br>
-			<center><input type="text" placeholder="Enter Email" name="email" required></center>
+			<center><input type="text" placeholder="Introduzca email" name="email" required></center>
 <br>
 		<label for="psw"><b><center>Contraseña</b></center></label>
 <br>
-			<center><input type="password" placeholder="Enter Password" name="psw" required></center>
+			<center><input type="password" placeholder="Contraseña" name="password" required></center>
 			  <label for="psw-repeat"><center><b>Repite contraseña</b></center></label>
 <br>
-    <center><input type="password" placeholder="Repeat Password" name="psw-repeat" required></center>
+    <center><input type="password" placeholder="Repite la contraseña" name="confirmPass" required></center>
 <br>
 			<center><p>Acuerdo de privacidad<a href="#">Terminos y privacidad</a></p></center>
 	</div>
@@ -46,7 +46,7 @@
 		<!--	<button type="submit" class="registerbtn">Registrarse</button> -->
 	</div>
 	<div class="move">
-	  <button class="log" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Entrar</button>
+	  <button class="log" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" onclick="register()">Entrar</button>
 	</div>
 		<!-- <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button> -->
 	</form>
