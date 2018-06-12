@@ -17,13 +17,17 @@
 	</div>
 	<!--Contenido del boton crear -->
 	<div id="id02" class="cajai">
-    <form action="scripts/script.php" class="modal-content animate">
+    <form action="scripts/registro.php" class="modal-content animate" method="post">
 		 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
 		   <!-- Imagen -->
 
 		 	<center><img src="img_perfil.png" alt="Avatar" class="avatar"></center>
 			<div class="container">
+<<<<<<< HEAD
 				<center><label for="uname"><b>Username</b></label></center>
+=======
+				<center><label for="uname"><b>Usuario</b></label></center>
+>>>>>>> ce838baebe1eb1136192e36ce386291c97550e71
       	<center><input type="text" placeholder="Usuario" name="username" required></center>
 
 <br>
@@ -52,9 +56,40 @@
 	</form>
 </div>
 
-<div class="move">
-  <button class="log" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Entrar</button>
+
+
+
+<div class="move3">
+<center><button class="cre" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Entrar</button></center>
 </div>
+<div id="id01" class="cajai">
+
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    </div>
+
+    <div class="container">
+      <center><label for="uname"><b>Nombre usuario</b></label></center>
+        <center><input type="text" placeholder="Enter Username" name="uname" required></center>
+      <center><label for="psw"><b>Contraseña</b></label></center>
+        <center><input type="password" placeholder="Enter Password" name="psw" required></center>
+        <center><button type="submit">Entrar</button></center>
+    </div>
+<br>
+      <center><span class="psw">Forgot <a href="#">password?</a></span></center>
+<br>
+<br>
+<br>
+		</div>
+	</form>
+</div>
+
+
+
+
+
   <!-- Este div contiene el formulario para iniciar sesion-->
   <div id="id01" class="cajad">
  <!--Contenido del boton login-->
