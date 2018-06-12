@@ -16,22 +16,19 @@ session_start();
  }
 
  $nickname = $_POST['usernameLogIn'];
- $contrasena = hash('sha512',$_POST['passLogIn']);
+ $contrasena = $_POST['passLogIn'];
 
- $buscaUsuario = "SELECT * FROM usuarios WHERE nick = '$nickname' AND SHA2('password',512) = $contrasena";
+ $buscaUsuario = "SELECT * FROM usuarios WHERE nick = '$_POST[usernameLogIn]'";
  $ejecutarQuery = $conexion_db->query($buscaUsuario);
- $contarCoincidencias = mysqli_num_rows($ejecutarQuery);
 
- if($contarCoincidencias == 1){
-
+ $hashed_password = $ejecutarQuery->fetch_assoc();
+ if(password_verify($contrasena,$hashed_password['password'])){
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $nickname;
     $_SESSION['start'] = time();
-    print "Bienvenido! " . $_SESSION['username'];
     header("Location: ../paginas/inicio.html");
 
   }else{
-    header("Location: ../index.html");
     print "Usuario o contraseña incorrectos";
   }
   mysqli_close($conexion_db);
