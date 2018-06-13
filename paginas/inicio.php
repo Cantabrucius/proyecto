@@ -21,7 +21,7 @@
   <div class="infoUser">
     <?php
       if($_SESSION['sesion']==true){
-        echo "<h1 id='nombreUsuario'>$_SESSION[usernameLogIn]</h1>";
+        echo "<h2 id='nombreUsuario'>Bienvenido $_SESSION[usernameLogIn]</h2>";
       }else if($_SESSION['logged']==false){
         echo 'adios';
       }
@@ -57,12 +57,45 @@
             <button id='seguir'>+</button><br/></div>";
         }
       }
+      mysqli_close($conexion_db);
       ?>
 
   </div>
 
   <div class="eventosCercanos">
     <h1>lista de eventos cercanos</h1>
+    <?php
+    $host_db = "localhost";
+    $usuario_db = "root";
+    $pass_db = "Monitor?2";
+    $nombre_db = "database";
+
+
+    $conexion_db = new mysqli($host_db, $usuario_db, $pass_db, $nombre_db);
+
+    if(!$conexion_db){
+      die("La conexion con la base de datos fallo");
+    }
+    $buscaCercanos= "SELECT titulo, DATEDIFF(CURDATE(), fechainicio) AS Dias FROM eventos ORDER BY Dias ASC";
+    $ejecutarQuery = $conexion_db->query($buscaCercanos);
+    $cuentaCercanos = mysqli_num_rows($ejecutarQuery);
+
+    if($cuentaCercanos > 0){
+
+      while($eventoCercano = $ejecutarQuery->fetch_array()){
+        if($eventoCercano[1] < 0){
+          echo "";
+        }else{
+        echo "<div class='evento'>
+          <h3 id='nombre'>$eventoCercano[0]</h3>
+          <p id='fecha'>Faltan $eventoCercano[1] dias</p>
+          <button id='seguir'>+</button><br/></div>";
+        }
+        }
+    }else{
+      echo "<p>No hay eventos</p>";
+    }
+    ?>
   </div>
 
   <footer>

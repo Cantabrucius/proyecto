@@ -35,7 +35,6 @@
 }
 
 .infoUser {
-    border: 1px solid black;
     width: 20%;
     height: 24%;
     margin-top: 15px;
@@ -43,6 +42,7 @@
     margin-left: 15px;
     margin-bottom: 15px;
     float:left;
+    text-align: center;
 }
 
 .eventos {
@@ -67,11 +67,12 @@
      margin-right: 20px;
 }
 .eventosCercanos {
-    border: 1px solid black;
     width: 20%;
     height: 55%;
     float: left;
     margin-left: 15px;
+    text-align: center;
+    font-family: "Gill Sans MT";
 }
 
 /* Aqui hacemos el estilo del pie de pagina */
