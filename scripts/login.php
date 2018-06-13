@@ -22,7 +22,8 @@ session_start();
  $ejecutarQuery = $conexion_db->query($buscarUsuario);
 
  if(mysqli_num_rows($ejecutarQuery) == 1){
-   $_SESSION['usernameLogIn'] =
+   $_SESSION['sesion'] = true;
+   $_SESSION['usernameLogIn'] = $username;
    header("Location: ../paginas/inicio.html");
  }else{
    session_close();
