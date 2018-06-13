@@ -14,22 +14,19 @@ session_start();
  if(!$conexion_db){
    die("La conexion con la base de datos fallo");
  }
+ $username = $_POST['usernameLogIn'];
+ $passwordLogIn_db_hashed = hash('sha512', $_POST['passLogIn']);
+ $pass = substr($passwordLogIn_db_hashed, 0, 12);
 
- $nickname = $_POST['usernameLogIn'];
- $contrasena = $_POST['passLogIn'];
+ $buscarUsuario = "SELECT * FROM usuarios WHERE nick = '$username' AND password = '$pass'";
+ $ejecutarQuery = $conexion_db->query($buscarUsuario);
 
- $buscaUsuario = "SELECT * FROM usuarios WHERE nick = '$_POST[usernameLogIn]'";
- $ejecutarQuery = $conexion_db->query($buscaUsuario);
-
- $hashed_password = $ejecutarQuery->fetch_assoc();
- if(password_verify($contrasena,$hashed_password['password'])){
-    $_SESSION['loggedin'] = true;
-    $_SESSION['username'] = $nickname;
-    $_SESSION['start'] = time();
-    header("Location: ../paginas/inicio.html");
-
-  }else{
-    print "Usuario o contraseña incorrectos";
-  }
-  mysqli_close($conexion_db);
+ if(mysqli_num_rows($ejecutarQuery) == 1){
+   $_SESSION['usernameLogIn'] =
+   header("Location: ../paginas/inicio.html");
+ }else{
+   session_close();
+   header("Location: ../index.html");
+   echo "adios";
+ }
   ?>
