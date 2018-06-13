@@ -23,8 +23,8 @@ session_start();
 
  if(mysqli_num_rows($ejecutarQuery) == 1){
    $_SESSION['sesion'] = true;
-   $_SESSION['usernameLogIn'] = $username;
-   header("Location: ../paginas/inicio.html");
+   $_SESSION['usernameLogIn'] = $_POST['usernameLogIn'];
+   header("Location: ../paginas/inicio.php");
  }else{
    session_close();
    header("Location: ../index.html");

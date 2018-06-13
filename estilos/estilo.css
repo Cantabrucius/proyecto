@@ -46,7 +46,6 @@
 }
 
 .eventos {
-    border: 1px solid black;
     width: 74%;
     height: 70%;
     margin-top: 15px;
@@ -285,4 +284,9 @@ margin-left: 275px;
     }
     .cancelbtn {
        width: 100%;
+}
+
+#nombreUsuario{
+  text-align: center;
+  font-family: "Gill Sans MT";
 }
