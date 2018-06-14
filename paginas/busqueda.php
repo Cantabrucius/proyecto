@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -8,21 +11,21 @@
   <div class="bmenu">
     <a href="#default" class="logo">Foto_Logo</a>
     <div class="btnderecha">
-    <a class="active" href="inicio.html">Inicio</a>
-    <a href="busqueda.html">Buscar</a>
-    <a href="crearEvento.html">Crear Evento</a>
-    <a href="cuenta.html">Cuenta</a>
+    <a class="active" href="inicio.php">Inicio</a>
+    <a href="busqueda.php">Buscar</a>
+    <a href="crearEvento.php">Crear Evento</a>
+    <a href="cuenta.php">Cuenta</a>
     </div>
   </div>
   <div class="bmain">
 <h1>BUSCAR EVENTO<h1>
-    <form name="formulario" method="post" action="http://pagina.com/send.php">
+    <form name="formulario" method="post" action="../scripts/search.php">
   <!-- Campo de busqueda por fecha -->
   Selecciona la fecha:
   <input type="date" name="bfecha" value="2018-06-10" min="2018-03-25"
                                   max="2019-06-10" step="1">
   <!--Campo de busqueda por nombre de evento -->
-  <input type="text" name="bnombre" value="Nombre del evento">
+  <input type="text" name="bnombre" >
   <!--Campo de busqueda por ciudad -->
   Ciudad:
   <input type="text" name="bciudad" value="Santander">
@@ -30,6 +33,7 @@
   <input type="submit" value="Buscar" class="btnBuscar" />
 </div>
 </form>
+
   </div>
   <footer>
     <p id="derechos">Derechos reservados por la compañia. Copyrigth &copy; 2017-2018. </p>
