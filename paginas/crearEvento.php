@@ -39,9 +39,11 @@
     Nombre Evento:
     <input type="text" name="nombre" value=""required>
   <br />
-    Fecha Evento:
-    <input type="date" name="bfecha" value="2018-06-10" min="2018-03-25" step="1" required>
+    Fecha Inicio:
+    <input type="date" name="bfecha" value="" min="2018-01-01" max="2018-12-30" step="1" required>
   </br>
+    Fecha Final:
+    <input type="date" name="bfecha" value="" min="2018-01-01" max="2018-12-30" step="1" required>
   </br>
     Descripcion:
   </br>

@@ -157,17 +157,6 @@ body {font-family:"Gill Sans MT"}
   height: 200px;
   padding: 100px 19px;
 }
-<<<<<<< HEAD
-.btnBuscar {
-       font-size:16px;
-       font-family:Verdana,Helvetica;
-       font-weight:bold;
-       color:white;
-       background:#638cb5;
-       border:0px;
-       width:160px;
-       height:40px;
-=======
 
 /* css inicio de sesion */
 .izquierda{
@@ -300,7 +289,6 @@ margin-left: 275px;
 #nombreUsuario{
   text-align: center;
   font-family: "Gill Sans MT";
->>>>>>> f1dcd361bbe3ed11950f0402b8d2af7cdbd2c683
 }
 
 p#derechos{
