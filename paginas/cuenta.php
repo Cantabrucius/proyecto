@@ -1,3 +1,6 @@
+<?php
+  session_start();
+ ?>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -26,23 +29,34 @@
 
     <div id="Informacion" class="tabcontent">
       <h1>Informacion</h1>
-      <form action="../controller/crear.php" method="post"> <input type="hidden" name="id" value="<?php echo $id;?>">
-          <br />
-            Nombre:
-            <input type="text" name="nombre" value="" readonly="readonly">
-          <br />
-          <br />
-            Apellido:
-            <input type="text" name="apellido" value="" readonly="readonly">
-          <br />
-          <br/>
-            Email:
-            <input type="text" name="email" value="" readonly="readonly">
-          <br/>
-          <br/>
-            Telefono:
-          <input type="text" name="telefono" value="" readonly="readonly">
-          <br/>
+
+          <?php
+          $host_db = "localhost";
+          $usuario_db = "root";
+          $pass_db = "Monitor?2";
+          $nombre_db = "database";
+
+
+          $conexion_db = new mysqli($host_db, $usuario_db, $pass_db, $nombre_db);
+
+          if(!$conexion_db){
+            die("La conexion con la base de datos fallo");
+          }
+            $buscaEventos= "SELECT * FROM usuarios WHERE nick = '$_SESSION[usernameLogIn]'";
+            $ejecutarQuery = $conexion_db->query($buscaEventos);
+            if(mysqli_num_rows($ejecutarQuery) > 0){
+              $infoUsuario = $ejecutarQuery->fetch_array();
+              echo "<p>Nombre: $infoUsuario[0] </p><br/>
+              <p>Apellidos: $infoUsuario[1] </p><br/>
+              <p>Email: $infoUsuario[3] </p><br/>
+              <p>Telefono: $infoUsuario[5] </p><br/>
+              <p>Localidad: $infoUsuario[6] </p><br/>";
+            }else{
+              echo "<p>$_SESSION[usernameLogIn]</p>";
+              echo "<p>No hay coincidencias</p>";
+            }
+          mysqli_close($conexion_db);
+          ?>
     </div>
 
 <div id="Editar" class="tabcontent">
