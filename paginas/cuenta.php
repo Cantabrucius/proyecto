@@ -11,10 +11,10 @@
   <div class="bmenu">
     <a href="#default" class="logo">Foto_Logo</a>
     <div class="btnderecha">
-    <a class="active" href="inicio.html">Inicio</a>
-    <a href="busqueda.html">Buscar</a>
-      <a href="crearEvento.html">Crear Evento</a>
-    <a href="cuenta.html">Cuenta</a>
+    <a class="active" href="inicio.php">Inicio</a>
+    <a href="busqueda.php">Buscar</a>
+      <a href="crearEvento.php">Crear Evento</a>
+    <a href="cuenta.php">Cuenta</a>
     </div>
   </div>
 
