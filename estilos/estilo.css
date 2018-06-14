@@ -96,7 +96,7 @@ body {font-family:"Gill Sans MT"}
 }
 .cuenta {
     float: left;
-    border: 1px solid #ccc;
+
 }
 #micuenta a:hover {
     left: 0;
@@ -138,9 +138,8 @@ body {font-family:"Gill Sans MT"}
 .tabcontent {
     float: left;
     padding: 0px 150px;
-    border: 1px solid black;
     width: 60%;
-    border-left: none;
+    border: none;
     height: 385px;
     font-family:"Gill Sans MT";
 }
@@ -302,4 +301,12 @@ margin-left: 275px;
   text-align: center;
   font-family: "Gill Sans MT";
 >>>>>>> f1dcd361bbe3ed11950f0402b8d2af7cdbd2c683
+}
+
+p#derechos{
+  float:left;
+}
+
+p#gmail{
+  float:right;
 }
